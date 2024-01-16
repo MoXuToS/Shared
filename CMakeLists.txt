@@ -27,9 +27,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Shared
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        FileFormatManager.hpp
-        FileFormatManager.cpp
-        FileFormatManager.py
+        Manager.py
+        FileFormatManager.cpp FileFormatManager.hpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Shared APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
