@@ -15,7 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 #Настройка библиотек Boost
 find_package(Boost REQUIRED COMPONENTS Python)
 # Добавление путей к файлам Python
-find_package(PythonLibs)
+find_package(Python)
 
 set(PROJECT_SOURCES
         main.cpp
