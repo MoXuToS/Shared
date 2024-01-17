@@ -22,9 +22,9 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        Manager.py
-        FileFormatManager.cpp
-        FileFormatManager.hpp
+        Framework/Manager.py
+        Framework/FileFormatManager.cpp
+        Framework/FileFormatManager.hpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
