@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "FileFormatManager.hpp"
 #include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent)
