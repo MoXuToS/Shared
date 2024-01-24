@@ -8,7 +8,7 @@ FileFormatManager::FileFormatManager ()
     setenv("PYTHONPATH", ".", 11);
     Py_Initialize();
     boost::python::object main_module = boost::python::import("Manager");
-    boost::python::object manager = main_module.attr("FileFormatManager")();
+    manager = main_module.attr("FileFormatManager")();
 }
 
 void FileFormatManager::register_file_format(const std::string& file_format, const std::string& application)
