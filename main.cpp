@@ -1,4 +1,3 @@
-#include <Python.h>
 #include "mainwindow.h"
 #include <QApplication>
 
