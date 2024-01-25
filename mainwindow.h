@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include  "FileFormatManager.hpp"
+#include "FileFormatManager.hpp"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,7 +18,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+private Q_SLOTS:
     void on_RegisterButton_clicked();
 
     void on_OpenButton_clicked();

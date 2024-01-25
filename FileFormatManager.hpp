@@ -1,6 +1,6 @@
 #pragma once
 #include <boost/python.hpp>
-#include<iostream>
+#include <iostream>
 
 class FileFormatManager 
 {

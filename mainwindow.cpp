@@ -1,4 +1,3 @@
-#include <Python.h>
 #include <cstdlib>
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"

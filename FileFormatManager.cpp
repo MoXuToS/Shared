@@ -1,13 +1,14 @@
 #include <boost/python.hpp>
+#include <Python.h>
 #include <cstdlib> //setenv
 #include "FileFormatManager.hpp"
 
 FileFormatManager::FileFormatManager () 
 {
     // Загрузка модуля Python
-    setenv("PYTHONPATH", ".", 11);
+    setenv("PYTHONPATH", ".", 1);
     Py_Initialize();
-    boost::python::object main_module = boost::python::import("Manager");
+    boost::python::object main_module = boost::python::import("manager");
     manager = main_module.attr("FileFormatManager")();
 }
 

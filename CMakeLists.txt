@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.5)
-cmake_policy(SET CMP0148 NEW)
 
 project(Shared VERSION 0.1 LANGUAGES CXX)
 
@@ -10,19 +9,29 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+add_definitions("-DBOOST_ALLOW_DEPRECATED_HEADERS")
+add_definitions("-DBOOST_BIND_GLOBAL_PLACEHOLDERS")
+
+set(PYTHON_INCLUDE_DIRS "/usr/include/python3.10")
+
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
 #Настройка библиотек Boost
 find_package(Boost REQUIRED COMPONENTS Python)
 # Добавление путей к файлам Python
-find_package(Python)
+find_package(PythonLibs REQUIRED)
+
+#Добавление библиотеки Python Boost
+include_directories(${Boost_INCLUDE_DIRS})
+include_directories(${PYTHON_INCLUDE_DIRS})
 
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        Manager.py
+        manager.py
         FileFormatManager.cpp
         FileFormatManager.hpp
 )
@@ -50,11 +59,8 @@ else()
     endif()
 endif()
 
-#Добавление библиотеки Python Boost
-include_directories(${BOOST_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS})
-
 # Добавление библиотек
-target_link_libraries(Shared PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Boost::python${Boost_MAJOR_VERISON} ${PYTHON_LIBRARIES})
+target_link_libraries(Shared PRIVATE Qt${QT_VERSION_MAJOR}::Widgets PRIVATE Boost::python ${PYTHON_LIBRARIES})
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
@@ -80,3 +86,5 @@ install(TARGETS Shared
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(Shared)
 endif()
+
+target_compile_definitions(Shared PRIVATE QT_NO_KEYWORDS)
