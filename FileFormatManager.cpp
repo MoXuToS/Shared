@@ -1,5 +1,4 @@
 #include<iostream>
-#include<dbus/dbus.h>
 #include"FileFormatManager.hpp"
 
 void Manager::RegisterFormats(const char *format, const char *Application)
