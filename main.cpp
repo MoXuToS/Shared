@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hi" << endl;
+    Manager* FileManager;
+    FileManager->RegisterFormats(".txt", "notebook");
+    FileManager->OpenFile("hehe.txt");
     return 0;
 }
