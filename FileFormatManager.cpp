@@ -1,6 +1,6 @@
 #include "FileFormatManager.hpp"
 
-void Manager::RegisterFormats(const char *format, const char *Application) 
+void Manager::RegisterFormats(const std::string format,const std::string Application) 
 {
     DBusMessageIter args;
     msg = dbus_message_new_method_call("com.example.filemanager", objectPath, interface, "RegisterFormat");
@@ -13,7 +13,7 @@ void Manager::RegisterFormats(const char *format, const char *Application)
     dbus_message_unref(msg);
 }
 
-void Manager::OpenFile(const char *filepath) 
+void Manager::OpenFile(const std::string filepath) 
 {
     msg = dbus_message_new_method_call("com.example.filemanager", objectPath, interface, "OpenFile");
     if(msg == NULL) {

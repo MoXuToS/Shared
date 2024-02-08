@@ -19,8 +19,8 @@ class Manager {
     {
         dbus_error_free(&error);
     }
-    void RegisterFormats(const char *format, const char *Application);
-    void OpenFile(const char *filepath);
+    void RegisterFormats(const std::string format,const std::string Application);
+    void OpenFile(const std::string filepath);
     private:
     DBusConnection* connection;
     DBusError error;
