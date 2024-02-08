@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DBusExample
+# Target rules for targets named FileManagerDemo
 
 # Build rule for target.
-DBusExample: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DBusExample
-.PHONY : DBusExample
+FileManagerDemo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FileManagerDemo
+.PHONY : FileManagerDemo
 
 # fast build rule for target.
-DBusExample/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/build
-.PHONY : DBusExample/fast
+FileManagerDemo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/build
+.PHONY : FileManagerDemo/fast
 
 FileFormatManager.o: FileFormatManager.cpp.o
 .PHONY : FileFormatManager.o
 
 # target to build an object file
 FileFormatManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/FileFormatManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.o
 .PHONY : FileFormatManager.cpp.o
 
 FileFormatManager.i: FileFormatManager.cpp.i
@@ -142,7 +142,7 @@ FileFormatManager.i: FileFormatManager.cpp.i
 
 # target to preprocess a source file
 FileFormatManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/FileFormatManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.i
 .PHONY : FileFormatManager.cpp.i
 
 FileFormatManager.s: FileFormatManager.cpp.s
@@ -150,7 +150,7 @@ FileFormatManager.s: FileFormatManager.cpp.s
 
 # target to generate assembly for a file
 FileFormatManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/FileFormatManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.s
 .PHONY : FileFormatManager.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +158,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DBusExample"
+	@echo "... FileManagerDemo"
 	@echo "... FileFormatManager.o"
 	@echo "... FileFormatManager.i"
 	@echo "... FileFormatManager.s"

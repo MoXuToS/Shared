@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vboxuser/git/Sharing-files/FileFormatManager.cpp" "CMakeFiles/DBusExample.dir/FileFormatManager.cpp.o" "gcc" "CMakeFiles/DBusExample.dir/FileFormatManager.cpp.o.d"
-  "/home/vboxuser/git/Sharing-files/main.cpp" "CMakeFiles/DBusExample.dir/main.cpp.o" "gcc" "CMakeFiles/DBusExample.dir/main.cpp.o.d"
+  "/home/vboxuser/git/Sharing-files/FileFormatManager.cpp" "CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.o" "gcc" "CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.o.d"
+  "/home/vboxuser/git/Sharing-files/main.cpp" "CMakeFiles/FileManagerDemo.dir/main.cpp.o" "gcc" "CMakeFiles/FileManagerDemo.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

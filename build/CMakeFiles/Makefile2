@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/vboxuser/git/Sharing-files/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/DBusExample.dir/all
+all: CMakeFiles/FileManagerDemo.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/DBusExample.dir/clean
+clean: CMakeFiles/FileManagerDemo.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DBusExample.dir
+# Target rules for target CMakeFiles/FileManagerDemo.dir
 
 # All Build rule for target.
-CMakeFiles/DBusExample.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vboxuser/git/Sharing-files/build/CMakeFiles --progress-num=1,2,3 "Built target DBusExample"
-.PHONY : CMakeFiles/DBusExample.dir/all
+CMakeFiles/FileManagerDemo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vboxuser/git/Sharing-files/build/CMakeFiles --progress-num=1,2,3 "Built target FileManagerDemo"
+.PHONY : CMakeFiles/FileManagerDemo.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DBusExample.dir/rule: cmake_check_build_system
+CMakeFiles/FileManagerDemo.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/git/Sharing-files/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DBusExample.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FileManagerDemo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/git/Sharing-files/build/CMakeFiles 0
-.PHONY : CMakeFiles/DBusExample.dir/rule
+.PHONY : CMakeFiles/FileManagerDemo.dir/rule
 
 # Convenience name for target.
-DBusExample: CMakeFiles/DBusExample.dir/rule
-.PHONY : DBusExample
+FileManagerDemo: CMakeFiles/FileManagerDemo.dir/rule
+.PHONY : FileManagerDemo
 
 # clean rule for target.
-CMakeFiles/DBusExample.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DBusExample.dir/build.make CMakeFiles/DBusExample.dir/clean
-.PHONY : CMakeFiles/DBusExample.dir/clean
+CMakeFiles/FileManagerDemo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileManagerDemo.dir/build.make CMakeFiles/FileManagerDemo.dir/clean
+.PHONY : CMakeFiles/FileManagerDemo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(DBusExample)
+project(FileManagerDemo)
 
 # Поиск пакета D-Bus
 find_package(PkgConfig)
@@ -21,7 +21,7 @@ set(HEADERS
 )
 
 # Добавление исполняемого файла
-add_executable(DBusExample ${SOURCES})
+add_executable(FileManagerDemo ${SOURCES})
 
 # Линковка библиотеки dbus
-target_link_libraries(DBusExample ${DBUS_LIBRARIES})
+target_link_libraries(FileManagerDemo ${DBUS_LIBRARIES})

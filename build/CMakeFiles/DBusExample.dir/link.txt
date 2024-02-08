@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/DBusExample.dir/main.cpp.o CMakeFiles/DBusExample.dir/FileFormatManager.cpp.o -o DBusExample  -ldbus-1 
