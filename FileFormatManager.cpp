@@ -8,7 +8,6 @@ void Manager::RegisterFormats(const std::string format,const std::string Applica
     dbus_message_iter_append_basic(&args, DBUS_TYPE_STRING, &format);
     dbus_message_iter_append_basic(&args, DBUS_TYPE_STRING, &Application);
 
-    // Отправка сообщений на шину
     dbus_connection_send(connection, msg, NULL);
     dbus_message_unref(msg);
 }

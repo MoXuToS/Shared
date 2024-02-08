@@ -5,10 +5,7 @@ using namespace std;
 int main()
 {
     Manager FileManager;
-    cout << "FileManager Created" << endl;
-    FileManager.RegisterFormats(".txt", "Notebook");
-    cout << "FileFormat registred" << endl;
-    FileManager.OpenFile("hehe.txt");
-    cout << "File should be opened" << endl;
+    FileManager.RegisterFormats("txt", "notebook");
+    FileManager.OpenFile("/home/vboxuser/git/Sharing-files/hehe.txt");
     return 0;
 }
