@@ -11,7 +11,8 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I/usr/include/dbus-1.0",
-                "-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
+                "-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include",
+                "-ldbus-1"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -36,7 +37,8 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I/usr/include/dbus-1.0",
-                "-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
+                "-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include",
+                "-ldbus-1"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -56,7 +58,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/usr/include/dbus-1.0",
+                "-I/usr/lib/x86_64-linux-gnu/dbus-1.0/include",
+                "-ldbus-1"
             ],
             "options": {
                 "cwd": "${fileDirname}"
