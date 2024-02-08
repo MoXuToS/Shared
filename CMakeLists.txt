@@ -9,8 +9,19 @@ pkg_check_modules(DBUS REQUIRED dbus-1)
 include_directories(${DBUS_INCLUDE_DIRS})
 link_directories(${DBUS_LIBRARY_DIRS})
 
+# Добавление исходных файлов
+set(SOURCES
+    main.cpp
+    FileFormatManager.cpp
+)
+
+# Добавление заголовочных файлов
+set(HEADERS
+    FileFormatManager.hpp
+)
+
 # Добавление исполняемого файла
-add_executable(DBusExample main.cpp FileFormatManager.cpp)
+add_executable(DBusExample ${SOURCES})
 
 # Линковка библиотеки dbus
 target_link_libraries(DBusExample ${DBUS_LIBRARIES})
