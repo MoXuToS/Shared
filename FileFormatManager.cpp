@@ -1,5 +1,4 @@
-#include<iostream>
-#include"FileFormatManager.hpp"
+#include<FileFormatManager.hpp>
 
 void Manager::RegisterFormats(const char *format, const char *Application)
 {
