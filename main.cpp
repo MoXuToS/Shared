@@ -24,7 +24,7 @@ int main()
                 result += buffer;
 
         if(!result.empty())
-            cout << "Выбранный файл" << result << endl;
+            cout << "Выбранный файл: " << result << endl;
         else
             cout << "Операция отменена" << endl;
         break;
