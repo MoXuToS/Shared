@@ -33,7 +33,7 @@ class Manager {
     bool FormatIsRegistred(const std::string filepath);
 
     private:
-    DBusConnection* connection;
+    DBusConnection *connection;
     DBusError error;
     const char *objectPath = "/com/example/filemanager";
     const char *interface = "com.example.filemanagerinterface";
