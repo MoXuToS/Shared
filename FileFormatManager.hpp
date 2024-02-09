@@ -9,13 +9,12 @@ class Manager {
     {
         dbus_error_init(&error);
         connection = dbus_bus_get(DBUS_BUS_SESSION, &error);
+        dbus_bus_register(connection, &error);
         if(dbus_error_is_set(&error))
         {
             std::cerr << "Ошибка при создании соединенния DBUS:" << error.message << std::endl;
             dbus_error_free(&error);
         }
-        dbus_bus_register(connection, &error);
-        std::cout << "bus_registred" << std::endl;
     }
 
     // Деструктор
