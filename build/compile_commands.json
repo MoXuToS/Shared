@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/vboxuser/git/Sharing-files/build",
+  "command": "/usr/bin/g++  -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -g -o CMakeFiles/FileManagerDemo.dir/main.cpp.o -c /home/vboxuser/git/Sharing-files/main.cpp",
+  "file": "/home/vboxuser/git/Sharing-files/main.cpp"
+},
+{
+  "directory": "/home/vboxuser/git/Sharing-files/build",
+  "command": "/usr/bin/g++  -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -g -o CMakeFiles/FileManagerDemo.dir/FileFormatManager.cpp.o -c /home/vboxuser/git/Sharing-files/FileFormatManager.cpp",
+  "file": "/home/vboxuser/git/Sharing-files/FileFormatManager.cpp"
+}
+]
