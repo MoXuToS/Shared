@@ -1,0 +1,19 @@
+<!DOCTYPE busconfig PUBLIC "-//freedesktop//DTD D-BUS Bus Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/dbus/1.0/busconfig.dtd">
+<busconfig>
+  <service name="com.example.filemanager">
+    <interface name="com.example.filemanagerinterface">
+      <method name="RegisterFormat">
+        <arg type="s" direction="in" name="format"/>
+        <arg type="s" direction="in" name="Application"/>
+      </method>
+      <method name="CheckRegistred">
+        <arg type="s" direction="in" name="filepath"/>
+        <arg type="b" direction="out" name="isRegistred"/>
+      </method>
+      <method name="OpenFile">
+        <arg type="s" direction="in" name="filepath"/>
+      </method>
+    </interface>
+  </service>
+</busconfig>

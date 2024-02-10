@@ -16,7 +16,6 @@ int main()
             cerr << "Ошибка при открытии pipe" << endl;
             break;
         }
-
         char buffer[256];
         string result = "";
         while(!feof(pipe))
