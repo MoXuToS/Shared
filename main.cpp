@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 #include "FileFormatManager.hpp"
 using namespace std;
 

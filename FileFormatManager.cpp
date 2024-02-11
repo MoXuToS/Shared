@@ -2,7 +2,6 @@
 
 void Manager::RegisterFormat(const std::string format) 
 {
-    DBusMessageIter args;
     msg = dbus_message_new_signal(objectPath, interface, "RegisterFormat");
 
     dbus_message_append_args(msg, DBUS_TYPE_STRING, &format, DBUS_TYPE_INVALID);
