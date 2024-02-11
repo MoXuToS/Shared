@@ -7,7 +7,7 @@
         <arg type="s" direction="in" name="format"/>
       </method>
       <method name="RegisterOpenType">
-        <arg type="as" direction="in" name="filepath"/>
+        <arg type="as" direction="in" name="OpenTypeForType"/>
       </method>
     </interface>
   </service>

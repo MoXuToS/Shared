@@ -15,6 +15,7 @@ void Manager::RegisterFormat(const std::string format)
 void Manager::RegisterOpenType(const std::string format, const std::string Application)
 {
     DBusMessageIter iter;
+    msg = dbus_message_new_signal(objectPath, interface, "RegisterOpenType");
     dbus_message_iter_init_append(msg, &iter);
     dbus_message_iter_open_container(&iter, DBUS_TYPE_ARRAY, DBUS_TYPE_ARRAY_AS_STRING, &iter);
     dbus_message_iter_append_basic(&iter, DBUS_TYPE_STRING, format.c_str());

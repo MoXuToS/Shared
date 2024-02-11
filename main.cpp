@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     Manager FileManager;
-    cout << "Registration" << endl;
     FileManager.RegisterFormat("txt");
+    FileManager.RegisterOpenType("txt", "Notebook");
     return 0;
 }
