@@ -23,16 +23,14 @@ class Manager {
         dbus_error_free(&error);
     }
 
-    // Регистрация связи формата с приложением
-    void RegisterFormats(const std::string format,const std::string Application);
+    // Регистрация формата
+    void RegisterFormat(const std::string format);
 
-    // Открытие файла
-    void OpenFile(const std::string filepath);
-
-    // Проверка на удачную регистрацию
-    bool FormatIsRegistred(const std::string filepath);
+    // Регистрация способа запуска файла
+    void RegisterOpenType(const std::string format, const std::string Application);
 
     private:
+    DBusMessage *msg;
     DBusConnection *connection;
     DBusError error;
     const char *objectPath = "/com/example/filemanager";
